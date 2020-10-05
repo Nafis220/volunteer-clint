@@ -6,7 +6,7 @@ const InfoSection = ({info}) => {
   const deleteEvent = (item) => (event) =>  {
 
 const selected = event.target.parentNode ;
-  fetch(`http://localhost:8080/delete/${item}`,{
+  fetch(`https://agile-bayou-54471.herokuapp.com/delete/${item}`,{
       method: 'DELETE',
   })
   .then(res => res.json())

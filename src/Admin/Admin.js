@@ -5,7 +5,7 @@ import AdminSection from './AdminSection/AdminSection';
 const Admin = () => {
     const [volunteer, setVolunteer] = useState([])
     useEffect(()=>{
-        fetch('http://localhost:8080/volunteerAllEvents')
+        fetch('https://agile-bayou-54471.herokuapp.com/volunteerAllEvents')
         .then(res => res.json())
         .then(data => setVolunteer(data))
     },[])

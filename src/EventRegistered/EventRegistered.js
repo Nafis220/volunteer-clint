@@ -26,7 +26,7 @@ const EventRegistered = () => {
 
     const handleEvent = () => {
 	 const allInfoOfVolunteer = {...loggedInUser, ...work, ...selectedDate}
-	 fetch('http://localhost:8080/volunteerPersonalInfo',{
+	 fetch('https://agile-bayou-54471.herokuapp.com/volunteerPersonalInfo',{
 		 method: 'POST',
 		 headers: {'Content-Type': 'application/json'},
 		 body: JSON.stringify(allInfoOfVolunteer),

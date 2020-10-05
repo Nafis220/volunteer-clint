@@ -7,7 +7,7 @@ const VolunteerInfo = () => {
     const [loggedInUser,setLoggedInUser] = useContext(userContext)
     const [info, setInfo] = useState([])
     useEffect(()=>{
-        fetch(`http://localhost:8080/volunteerEvents?email=` +loggedInUser.email)
+        fetch(`https://agile-bayou-54471.herokuapp.com/volunteerEvents?email=` +loggedInUser.email)
        .then(res=> res.json())
        .then(data => setInfo(data))
     },[])

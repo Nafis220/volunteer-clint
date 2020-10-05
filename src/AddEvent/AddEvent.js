@@ -18,7 +18,7 @@ const AddEvent = () => {
 
     const handleEvent = () => {
       
-        fetch('http://localhost:8080/newEvent',{
+        fetch('https://agile-bayou-54471.herokuapp.com/newEvent',{
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(newEvent),

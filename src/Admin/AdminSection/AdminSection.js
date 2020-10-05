@@ -4,7 +4,7 @@ const AdminSection = ({volunteer}) => {
     const deleteEvent = (email) => (event) =>  {
 
         const selected = event.target.parentNode ;
-          fetch(`http://localhost:8080/deleteMember/${email}`,{
+          fetch(`https://agile-bayou-54471.herokuapp.com/deleteMember/${email}`,{
               method: 'DELETE',
           })
           .then(res => res.json())
